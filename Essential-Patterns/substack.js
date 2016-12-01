@@ -1,5 +1,7 @@
 /**
-        The substack pattern grants a single entrance point into a module. Simplicity is the guiding principle behind this practice, which is a major aim of programming in general.
+        The substack pattern grants a single entrance point into a module. 
+	Simplicity is the guiding principle behind this practice, which is a major 
+	aim of programming in general.
 **/
 
 module.exports = (name) => {
