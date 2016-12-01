@@ -1,20 +1,13 @@
 /**
-        Goal: Implement an asynchronous function that emits events.
-            +Can register listeners.
-            +What is an easy example? Something where a function is
-             needed, but allows for manipulation of its events
-                +Could use book's example of reading a file then 
-                 performing manipulations after the file is read.
-                 +Look for abstracts that are asynchronous.
-                    -After response recieved and u
-                 +Create function that executes after response 
-                  recieved.
-                    +Then collects all the data.
-                    +Once all data collected, manipulate data.
-                 +Does this process achieve goal?
-                    -Create asynchronous function
-                    -Emit event after something completed
-                        +End event is default. Want to have custom
-                         event created through EventEmitter class
-                    -Listen to event 
+        An example of the small surface area pattern, where                   responseManipulator is a response haandler granting clients
+        access to manipulating the response through a callback. 
+        Clients also have access to other functionality via the Event
+        Emitter object, such as manipulating the output of the data           event handler during the end event.
 **/
+
+var responseManipulator = (req, res, callback) => {
+    var EventEmitter = require('events')
+    //Make callback the listener for the data event
+    res.on('data', callback)
+    return EventEmitter
+}
