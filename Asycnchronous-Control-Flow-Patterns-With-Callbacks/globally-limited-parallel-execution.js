@@ -1,6 +1,6 @@
 /**
-        Regulates the number of tasks that can be executed in parallel among 
-        all instances of a function in the global scope.
+        Regulates the number of tasks executed in parallel among 
+        all instances of a function.
 **/
 
 const TaskQueue = require('./taskQueue')
