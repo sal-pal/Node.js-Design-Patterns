@@ -1,6 +1,6 @@
 /**
         Limited parallel execution is a pattern that divides the execution of  
-        tasks into set intervals, as to not overwhelm system resources.
+        tasks into intervals, so as to not overwhelm system resources.
 **/
 
 const tasks = ...
