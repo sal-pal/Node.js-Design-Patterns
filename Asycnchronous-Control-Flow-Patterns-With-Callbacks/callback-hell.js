@@ -4,7 +4,8 @@
         in-place callback definitions. This results in
         the code's poor readability, along with potential 
         confusion around callbacks of different scopes having 
-        the same variable name (error, for example)
+        the same variable name (for example, two variables in
+        this code are both named error).
 **/
 
 
