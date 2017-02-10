@@ -1,3 +1,7 @@
+/**
+        Created a factory function that generates arrays populated with random primitive values.
+**/
+
 module.exports = (length) => {
     var array = []
     for (var i=0; i < length+1; i++) {
@@ -33,11 +37,9 @@ function makeChoiceValue () {
 
 
 
-
 function makeRandomNumber () {
     return Math.round(Math.random() * 100)
 }
-
 
 
 
@@ -45,7 +47,6 @@ function makeRandomString () {
     const randomString = require("randomstring")
     return randomString.generate(5)
 }
-
 
 
 
