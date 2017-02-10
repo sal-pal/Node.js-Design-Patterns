@@ -1,5 +1,5 @@
 /**
-        Created a factory function that generates arrays populated with random primitive values.
+        Created a factory that generates arrays populated with random primitive values.
 **/
 
 module.exports = (length) => {
